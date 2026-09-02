@@ -1,6 +1,5 @@
  <?php
 
-    echo "passou aqui 1";
         //Verifica se o método de envio das informações do form é "POST"
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             //Cria variáveis para armazenar as informações recebidas do array $_POST
@@ -85,7 +84,6 @@
                 }
             }
 
-            echo "passou aqui 2";
 
             //Verifica se não há erro de preenchimento
             if(!$Erropreenchimento ){
@@ -135,7 +133,7 @@
 
         }
         else{
-            //Usa a função header() para redirecionar o usuário para o formUsuario.php
+            
             header("location:index.php");
         }
 

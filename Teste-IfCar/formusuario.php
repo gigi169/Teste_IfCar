@@ -23,7 +23,7 @@
 
                 <div>
                     <h1>🚗 Criar sua conta</h1>
-                    <p>Cadastre-se para começar a usar o Carona+.</p>
+                    <p>Cadastre-se para começar a usar o IfCar</p>
                 </div>
 
             </div>

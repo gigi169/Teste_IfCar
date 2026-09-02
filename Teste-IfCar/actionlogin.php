@@ -21,6 +21,7 @@
         $_SESSION['Idusuario']    = $registro['ID'];
         $_SESSION['Nomeusuario']  = $registro['Nomeusuario'];
         $_SESSION['Emailusuario'] = $registro['Emailusuario'];
+        $_SESSION['Telefoneusuario'] = $registro['Telefoneusuario'];
         $_SESSION['logado']       = true;
 
         //Redirecion o usuário para a página inicial

@@ -19,9 +19,7 @@ $caronas = [];
 </head>
 
 <body>
-    <div class="banner">
-        <img src="assets/img/banner1.png" alt="Pedir carona">
-    </div>
+    
     <div class="container">
 
         <div class="search-box">
@@ -31,16 +29,16 @@ $caronas = [];
                 <div class="title-area">
                     <div>
                         <h1>Cadastrar Carona</h1>
-                        <p>Cadastre uma carona para outros estudantes.</p>
+                        <p>Cadastre uma carona para outros estudantes</p>
                     </div>
                 </div>
 
                 <form 
-                    action="actioncarona.php" 
+                    action="actioncarona.php?categoria=oferecendo" 
                     method="POST" 
                     enctype="multipart/form-data"
                 >
-
+                    
                     <!-- DADOS DO USUÁRIO -->
                     <div class="section">
 
@@ -176,22 +174,6 @@ $caronas = [];
                         </div>
                         
                     </div>
-                    <div class="section">
-                        <h2 class="section-title">
-                            Detalhes
-                        </h2>
-                        <div class="locations">
-                            <div>
-                                <input
-                                    type="text"
-                                    id="Detalhes"
-                                    name="Detalhes"
-                                    placeholder="Detalhes"
-                                >
-                            </div>
-                        </div>    
-                    </div>
-
 
                     <!-- BOTÃO -->
                     <button

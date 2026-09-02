@@ -10,7 +10,7 @@ $usuario = [
 
     'email' => $_SESSION['Emailusuario'] ?? 'maria@email.com',
 
-    'telefone' => $_SESSION['Telefoneusuario'] ?? '(42) 99999-9999',
+    'Telefoneusuario' => $_SESSION['Telefoneusuario'] ?? '(42) 99999-9999',
 ];
 
 ?>
@@ -161,7 +161,7 @@ $usuario = [
                             name="Telefoneusuario"
                             value="<?php
                                 echo htmlspecialchars(
-                                    $usuario['telefone']
+                                    $usuario['Telefoneusuario']
                                 );
                             ?>"
                             required

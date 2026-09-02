@@ -18,8 +18,6 @@
                 <a href="index.php">Início</a>
                 <a href="pedir-carona.php">Pedir carona</a>
                 <a href="formcarona.php">Cadastrar carona</a>
-                <a href="oferecer-carona.php">Oferecer carona</a>
-                <a href="perfil.php">Meu perfil</a>
                 <?php if(isset($_SESSION['Idusuario'])): ?>
                     <a href="perfil.php">Meu perfil</a>
                 <?php else: ?>

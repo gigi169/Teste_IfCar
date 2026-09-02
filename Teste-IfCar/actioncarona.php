@@ -4,7 +4,9 @@
         //Verifica se o método de envio das informações do form é "POST"
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             //Cria variáveis para armazenar as informações recebidas do array $_POST
-            $Enderecosaida = $Enderecodestino =  $Numeropassageiros = $Data = $Hora = $Detalhes= "";
+            $Enderecosaida = $Enderecodestino =  $Numeropassageiros = $Data = $Hora = "";
+
+            $Categoria = $_GET["categoria"];
 
             //Variável booleana para controle de erros de preenchimento
             $Erropreenchimento = false;
@@ -81,8 +83,8 @@
                 session_start();
                 $Idusuario = $_SESSION['Idusuario'] ?? "";
                 //Cria uma variável para armazenar a QUERY que realiza a inserção de dados na tabela Usuarios
-                $Inserirusuario = "INSERT INTO Carona (Numeropassageiros, Enderecosaida, Enderecodestino, Data, Hora, Detalhes, Idusuario)
-                 VALUES ( '$Numeropassageiros', '$Enderecosaida', '$Enderecodestino' , '$Data' , '$Hora', '$Detalhes' , '$Idusuario')";
+                $Inserirusuario = "INSERT INTO Carona (Numeropassageiros, Enderecosaida, Enderecodestino, Data, Hora, Categoria,Idusuario)
+                 VALUES ( '$Numeropassageiros', '$Enderecosaida', '$Enderecodestino' , '$Data' , '$Hora', '$Categoria','$Idusuario')";
 
 
                 //Usa a função mysqli_query() para executar a QUERY no Banco de Dados
@@ -104,10 +106,6 @@
                                 <tr>
                                     <th>HORA DA CARONA</th>
                                     <td>$Hora</td>
-                                </tr>
-                                <tr>
-                                    <th>DETALHES DA CARONA</th>
-                                    <td>$Detalhes</td>
                                 </tr>
                             </table>
                         </div>

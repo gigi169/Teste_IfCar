@@ -26,7 +26,7 @@ if (isset($_GET['erroLogin'])) {
 
     <link rel="stylesheet" href="assets/style.css">
 
-    <title>Entrar - Carona+</title>
+    <title>Entrar - IfCar</title>
 </head>
 
 <body>
